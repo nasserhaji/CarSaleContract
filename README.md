@@ -1,4 +1,4 @@
-# CarSaleContract
+# Car Sale Solidity Smart Contract
 
 ```solidity
 
@@ -7,7 +7,7 @@
  * @dev This contract represents a car sale transaction between a seller and a buyer.
  */
  
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.5;
 
 contract CarSaleContract {
     
@@ -107,12 +107,12 @@ contract CarSaleContract {
 * CarSold (indexed address seller, indexed address buyer, indexed uint carPrice): This event is emitted when the car is sold.
 
 ## Functions
-constructor (address payable _seller, string memory _carMakeModel, uint _carYear, uint _carMileage, uint _carPrice): This function is called when the contract is created. It sets the initial values for the seller, car make and model, year, mileage, and price.
-onlySeller (modifier): This modifier restricts access to functions that can only be called by the seller.
-onlyBuyer (modifier): This modifier restricts access to functions that can only be called by the buyer.
-buyCar (function): This function is called by the buyer to purchase the car. It transfers the payment to the seller and sets the carSold variable to true. It also emits a CarSold event.
-updateCarInspection (function): This function is called by the seller to update the car inspection status.
-withdrawFunds (function): This function is called by the seller to withdraw the funds after the car is sold. It transfers the funds to the seller's address.
+* constructor (address payable _seller, string memory _carMakeModel, uint _carYear, uint _carMileage, uint _carPrice): This function is called when the contract is created. It sets the initial values for the seller, car make and model, year, mileage, and price.
+* onlySeller (modifier): This modifier restricts access to functions that can only be called by the seller.
+* onlyBuyer (modifier): This modifier restricts access to functions that can only be called by the buyer.
+* buyCar (function): This function is called by the buyer to purchase the car. It transfers the payment to the seller and sets the carSold variable to true. It also emits a CarSold event.
+* updateCarInspection (function): This function is called by the seller to update the car inspection status.
+* withdrawFunds (function): This function is called by the seller to withdraw the funds after the car is sold. It transfers the funds to the seller's address.
 
 ## Usage
 To use this smart contract, you will need to deploy it to the Ethereum blockchain using a tool like Remix or Truffle. Once the contract is deployed, you can interact with it using a web3.js enabled web application or command line tool.
