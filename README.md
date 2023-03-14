@@ -1,4 +1,7 @@
 # Car Sale Solidity Smart Contract
+This smart contract for car trading enables the seller and buyer to directly trade a car without the need for an intermediary. The seller can enter the car's information into the contract and update the technical inspection status. If the buyer wishes to purchase the car, they can directly transfer the payment to the seller's account and receive the car in return.
+
+This smart contract is particularly useful for selling second-hand cars. Additionally, it allows the seller to easily receive the payment from the buyer after the transaction is completed.
 
 ```solidity
 
