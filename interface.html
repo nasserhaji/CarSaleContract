@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Smart Contract</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Car Smart Contract</h1>
+      <form>
+        <h2>Car Information</h2>
+        <div class="form-group">
+          <label for="make">Make:</label>
+          <input type="text" class="form-control" id="make">
+        </div>
+        <div class="form-group">
+          <label for="model">Model:</label>
+          <input type="text" class="form-control" id="model">
+        </div>
+        <div class="form-group">
+          <label for="year">Year:</label>
+          <input type="text" class="form-control" id="year">
+        </div>
+        <div class="form-group">
+          <label for="mileage">Mileage:</label>
+          <input type="text" class="form-control" id="mileage">
+        </div>
+        <div class="form-group">
+          <label for="inspection">Technical Inspection:</label>
+          <input type="checkbox" class="form-check-input" id="inspection">
+        </div>
+        <h2>Buyer Information</h2>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <hr>
+      <h2>Car Details</h2>
+      <p>Make: <span id="make-result"></span></p>
+      <p>Model: <span id="model-result"></span></p>
+      <p>Year: <span id="year-result"></span></p>
+      <p>Mileage: <span id="mileage-result"></span></p>
+      <p>Technical Inspection: <span id="inspection-result"></span></p>
+      <hr>
+      <button id="pay-btn" class="btn btn-primary">Pay</button>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $('form').submit(function(event){
+          event.preventDefault();
+          // submit car and buyer information to smart contract
+          // update car details section with smart contract response
+        });
+        $('#pay-btn').click(function(){
+          // trigger smart contract payment function
+        });
+      });
+    </script>
+  </body>
+</html>
