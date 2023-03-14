@@ -1,7 +1,7 @@
 # CarSaleContract
 
 ```solidity
-/.;'\\
+
 /**
  * @title CarSaleContract
  * @dev This contract represents a car sale transaction between a seller and a buyer.
