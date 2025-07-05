@@ -129,3 +129,13 @@ To sell a car using this smart contract, follow these steps:
 5. The seller can then call the withdrawFunds function to transfer the funds to their account.
 
 Note that this smart contract is a basic example and may need to be modified to meet your specific requirements. It is important to thoroughly test your smart contract before deploying it to the blockchain to ensure that it works as expected and is secure.
+## 📜 License
+
+This project is licensed under a **Custom NonCommercial Attribution License**.
+
+- ✅ Free to use, modify, and share for **non-commercial** and **educational** purposes
+- ❌ **Commercial use, resale, or monetization** is strictly prohibited without prior written consent
+- 📛 Attribution required: Developed by Mohammad Nasser Haji Hashemabad (https://mohammadnasser.com)
+
+📬 For commercial licensing or inquiries: [info@mohammadnasser.com](mailto:info@mohammadnasser.com)
+
